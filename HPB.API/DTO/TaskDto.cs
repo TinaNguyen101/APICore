@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace HPB.API.DTO
+{
+    public class TaskDto
+    {
+
+        public int Id { get; set; }
+        public string TaskName { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public double? Duration { get; set; }
+
+        public int? ProjectId { get; set; }
+        public int? ProjectName { get; set; }
+
+        public int? ProjectMaintenanceId { get; set; }
+        public int? MaintenanceName { get; set; }
+
+        public int? EmpId { get; set; }
+        public string EmpName { get; set; }
+        public int? CreatedId { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public int? UpdatedId { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+
+    }
+}

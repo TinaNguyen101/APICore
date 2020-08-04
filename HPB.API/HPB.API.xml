@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HPB.API</name>
+    </assembly>
+    <members>
+        <member name="M:API_HPB.Controllers.AttachmentFileController.Upload(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            Upload AttachmentFile
+            </summary>
+            <param name="file1"></param>
+            <param name="flag">0 : Project, 1 : ProjectMaintenance </param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.AttachmentFileController.GetProjectAttachmentFileById(System.Int64)">
+            <summary>
+            Get AttachmentFile By Id
+             -  page: project-info-attachfile, project-maintenance-info-attachfile
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.AttachmentFileController.Delete(System.Int32,System.String,System.String)">
+            <summary>
+            Delete AttachmentFile by Id
+             -  page: project-info-attachfile, project-maintenance-info-attachfile
+            </summary>
+            <param name="id"></param>
+            <param name="flag">0 : Project, 1 : ProjectMaintenance </param>
+            <param name="idPr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.AttachmentFileController.GetProjectAttachmentFile(System.Int64)">
+            <summary>
+            Get all AttachmentFile of Project
+             -  page: project-info-attachfile
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.AttachmentFileController.Post(HPB.API.DTO.ProjectAttachmentFileDto)">
+            <summary>
+            Insert AttachmentFile of Project
+            -   page: project-info-attachfile
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.AttachmentFileController.GetProjectMaintenanceAttachmentFile(System.Int64)">
+            <summary>
+            Get all AttachmentFile of Project Maintenance
+            - page: project-maintenance-info-attachfile
+            </summary>
+            <param name="projectMaintenanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.AttachmentFileController.Post(HPB.API.DTO.ProjectMaintenanceAttachmentFileDto)">
+            <summary>
+            Insert AttachmentFile of ProjectMaintenance
+             - page: project-maintenance-info-attachfile
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.CustomerController.GetAllEmployee">
+            <summary>
+            Get All Customer
+             - Page :
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.CustomerController.GetEmployeeById(System.Int64)">
+            <summary>
+            Get Customer by id
+            - page: 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.EmployeeController.GetAllEmployee">
+            <summary>
+            Get All Employee
+             - Page : project-info-member
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.EmployeeController.GetEmployeeById(System.Int64)">
+            <summary>
+            Get Employee by id
+            - page:  project-info-member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.MstController.GetAllMst">
+            <summary>
+            Get All Master
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.MstController.GetMstByName(System.String)">
+            <summary>
+            Get Master by Name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectController.CheckProjectMember(System.Int32,System.Int32,System.Int32)">
+             <summary>
+            check exist Member  of Project 
+              - page: project-info-member 
+             </summary>
+             <param name="projectId"></param>
+             <param name="empId"></param>
+             <param name="positionId"></param>
+             <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectController.GetProjects(HPB.API.DTO.PagingRequest{HPB.API.DTO.ProjectListFilterDto})">
+            <summary>
+            Get all Project (paging - sort - filter)
+             - page: project-list
+            </summary>
+            <param name="paging"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectController.GetAllProject">
+            <summary>
+            Get all Project
+             - page: project-list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectController.GetProjectBasic(System.Int64)">
+            <summary>
+            Get Project Basic Info
+            - page: project-info-basic
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectController.Post(HPB.API.DTO.ProjectBasicDto)">
+            <summary>
+            Insert Project
+            - page: project-info-basic
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectController.Put(HPB.API.DTO.ProjectBasicDto)">
+            <summary>
+            Update Project
+            - page:  project-info-basic
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectController.Delete(System.Int32)">
+            <summary>
+            Delete Project 
+             - page:   project-info-basic
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceController.GetProjects(System.Int64,HPB.API.DTO.PagingRequest{HPB.API.DTO.ProjectMaintenanceFilterDto})">
+            <summary>
+            Get all ProjectMaintenance by ProjectID  (paging - sort - filter)
+             - page: project-maintenance-info
+            </summary>
+            <param name="projectId"></param>
+            <param name="paging"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceController.GetProjectMaintenance(System.Int64)">
+            <summary>
+            Get all ProjectMaintenance by ProjectID
+             - page: project-maintenance-info
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceController.GetProjectMaintenanceById(System.Int64)">
+            <summary>
+             Get ProjectMaintenance by ProjectID
+              - page: project-maintenance-info-basic
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceController.Post(HPB.API.DTO.ProjectMaintenanceDto)">
+            <summary>
+            Insert ProjectMaintenance
+             - page: project-maintenance-info-basic
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceController.Put(HPB.API.DTO.ProjectMaintenanceDto)">
+            <summary>
+            Update ProjectMaintenance
+              - page: project-maintenance-info-basic
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceController.Delete(System.Int32)">
+            <summary>
+            DELETE ProjectMaintenance
+             - page: project-maintenance-info-basic
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceMemberController.GetProjectMaintenanceMember(System.Int32)">
+            <summary>
+            Get all  Member of Project Maintenance
+             - page: project-maintenance-info-member
+            </summary>
+            <param name="projectMaintenanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceMemberController.GetProjectMaintenanceMemberById(System.Int32)">
+            <summary>
+            Get Member of Project Maintenance by Id
+             - page: project-maintenance-info-member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceMemberController.Post(System.Collections.Generic.List{HPB.API.DTO.ProjectMaintenanceMemberInsertDto})">
+            <summary>
+            Insert multi Member of Project Maintenance
+             - page: project-maintenance-info-member
+            </summary>
+            <param name="dtolst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMaintenanceMemberController.Delete(System.Int32)">
+            <summary>
+            delete  Member of Project Maintenance
+             - page: project-maintenance-info-member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMemberController.GetProjectMember(System.Int32)">
+            <summary>
+            Get all  Member of Project 
+             - page: project-info-member
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMemberController.GetProjectMemberById(System.Int32)">
+            <summary>
+            Get  Member of Project by Id
+             - page: project-info-member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMemberController.Post(System.Collections.Generic.List{HPB.API.DTO.ProjectMemberInsertDto})">
+            <summary>
+            Insert multi Member of Project 
+            - page: project-info-member
+            </summary>
+            <param name="dtolst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectMemberController.Delete(System.Int32)">
+            <summary>
+            Delete  Member of Project 
+             - page: project-info-member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectReportController.GetProjectReport(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get Report Project by (yearMonth / year / statusId)
+            </summary>
+            <param name="yearMonth"></param>
+            <param name="year"></param>
+            <param name="statusId"></param>
+            <param name="rateYen"></param>
+            <param name="rateUSD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectReportController.GetProjectReportCostStatistics(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get Report Cost Statistics of Project by (year / yearMonthStart / yearMonthEnd)
+            </summary>
+            <param name="year"></param>
+            <param name="yearMonthStart"></param>
+            <param name="yearMonthEnd"></param>
+            <param name="rateYen"></param>
+            <param name="rateUSD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.ProjectReportController.GetProjectReportStatisticsByCust(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get Report Statistics of customer by (custId and year )
+            </summary>
+            <param name="custId"></param>
+            <param name="year"></param>
+            <param name="rateYen"></param>
+            <param name="rateUSD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.UserController.GetAllEmployee">
+            <summary>
+            Get All User
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_HPB.Controllers.UserController.Authenticate(HPB.API.DTO.UserDto)">
+            <summary>
+            Check login
+            </summary>
+            <param name="userDto"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:HPB.API.Helpers.FormFileSwaggerFilter" -->
+    </members>
+</doc>
